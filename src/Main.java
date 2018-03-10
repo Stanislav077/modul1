@@ -84,7 +84,7 @@ public class Main {
           String[] rgs =  arr.split(",");
 int j;
 int k;
-int s=0;
+
 
 
 
@@ -92,12 +92,12 @@ int s=0;
                 for (k=j+1;k<rgs.length;k++){
 
                     if(rgs[j].compareTo(rgs[k]) ==0){
-                        System.out.println(rgs[j]+" "+rgs[k]);
-                 
+                        System.out.println(rgs[k]);
+
                     }
                 }
             }
-            System.out.println(s);
+
 
         } catch (IOException e) {
             System.out.println("------File not found----------");
