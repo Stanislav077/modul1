@@ -12,20 +12,19 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
+
+        //Задачка номер 2
+     /*   Scanner in = new Scanner(System.in);
         int num;
         int maxnum;
         int counts;
-
         System.out.println("Введите крайнее число диопозона");
         maxnum = in.nextInt();
         System.out.println("Введите кол-во попыток");
         counts = in.nextInt();
-
-        final int min = 1; // Минимальное число для диапазона
-        final int max = maxnum; // Максимальное число для диапазона
+        final int min = 1;
+        final int max = maxnum;
         final int rnd = rnd(min, max);
-
         int i = 0;
         while (i < counts) {
             System.out.println("Введите число");
@@ -38,16 +37,13 @@ public class Main {
             } else if (num < rnd) {
                 System.out.println("Ваше число меньше");
             }
-
             i++;
-            if(i == counts){
+            if (i == counts) {
                 System.out.println("Попытки закончились");
             }
-
         }
-
-
-        System.out.println("Загаданное число: "+rnd);
+        System.out.println("Загаданное число: " + rnd);
+        */
 
     }
 }
