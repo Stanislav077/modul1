@@ -13,7 +13,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        //Задачка номер 2
+ //Задачка номер 2
      /*   Scanner in = new Scanner(System.in);
         int num;
         int maxnum;
@@ -44,6 +44,34 @@ public class Main {
         }
         System.out.println("Загаданное число: " + rnd);
         */
+// Задачка номер 3
+   /*     int[] array = {1, 4, 5, 1, 1, 3, 3};
+        int[] arrayNew = new int[array.length];
+        int counterForArrayNew = 0;
+        boolean checkTheSame = false;
+
+        System.out.println("Исходный массив");
+        for (int i = 0; i < arrayNew.length; i++) {
+            System.out.print(array[i] + ", ");
+        }
+        for (int i = 0; i < array.length; i++) {
+            for (int j = 0; j < array.length; j++) {
+                if(array[i] == array[j] & i != j) {
+                    checkTheSame = true;
+                }
+            }
+            if(!checkTheSame) {
+                arrayNew[counterForArrayNew++] = array[i];
+            }
+            checkTheSame = false;
+
+        }
+        System.out.println();
+        System.out.println("Различные элементы массива:");
+        for (int i = 0; i < arrayNew.length & arrayNew[i] != 0; i++) {
+            System.out.print(arrayNew[i] + ", ");
+        }
+ */
 
     }
 }
