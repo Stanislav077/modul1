@@ -1,5 +1,6 @@
+import java.util.ArrayList;
 import java.util.Scanner;
-
+import java.io.IOException;
 
 
 
@@ -10,6 +11,8 @@ public class Main {
         max -= min;
         return (int) (Math.random() * ++max) + min;
     }
+
+
 
     public static void main(String[] args) {
 
@@ -72,6 +75,34 @@ public class Main {
             System.out.print(arrayNew[i] + ", ");
         }
  */
+// Задачка номер 4
+
+        ReadFile readFile = new ReadFile();
+        try {
+          String arr =  readFile.read("F:\\test.txt");
+          String[] rgs =  arr.split(",");
+        //    System.out.println(rgs[1]);
+            int i=0;
+            while (i<rgs.length)
+            {
+                if(i%2 ==1) {
+                         System.out.println(rgs[i]);
+                }
+                i++;
+            }
+
+          //  System.out.println(rgs[3]);
+
+
+        } catch (IOException e) {
+            System.out.println("------File not found----------");
+            e.printStackTrace();
+        }finally {
+            System.out.println("------Finally--------");
+
+        }
+
+
 
     }
 }
