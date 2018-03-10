@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Scanner;
 import java.io.IOException;
 
@@ -81,18 +82,22 @@ public class Main {
         try {
           String arr =  readFile.read("F:\\test.txt");
           String[] rgs =  arr.split(",");
-        //    System.out.println(rgs[1]);
-            int i=0;
-            while (i<rgs.length)
-            {
-                if(i%2 ==1) {
-                         System.out.println(rgs[i]);
+int j;
+int k;
+int s=0;
+
+
+
+            for (j=0;j<rgs.length;j++){
+                for (k=j+1;k<rgs.length;k++){
+
+                    if(rgs[j].compareTo(rgs[k]) ==0){
+                        System.out.println(rgs[j]+" "+rgs[k]);
+                 
+                    }
                 }
-                i++;
             }
-
-          //  System.out.println(rgs[3]);
-
+            System.out.println(s);
 
         } catch (IOException e) {
             System.out.println("------File not found----------");
@@ -101,6 +106,7 @@ public class Main {
             System.out.println("------Finally--------");
 
         }
+
 
 
 
